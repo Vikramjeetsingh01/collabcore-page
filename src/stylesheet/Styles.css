@@ -1,0 +1,475 @@
+/* 
+==================================================
+- hero section css
+==================================================
+*/
+div {
+    overflow-x: clip;
+}
+
+main {
+    margin-top: 3.5rem;
+}
+
+.Hero_sec {
+    padding: 7rem 0 7rem;
+    position: relative;
+    margin-top: 3.5rem;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.Hero_sec::before {
+    position: absolute;
+    content: '';
+    left: -610px;
+    top: -183px;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/images/Eclipse-small.webp);
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.Hero_sec .container {
+    padding-right: 0;
+    padding-left: 13rem;
+}
+
+.main_txtblk {
+    padding-right: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.main_txtblk h1 {
+    font-size: 64px;
+    font-weight: var(--weight-bold);
+    letter-spacing: -1.92px;
+    max-width: 600px;
+}
+
+.main_txtblk p {
+    font-size: 18px;
+    max-width: 530px;
+    color: var(--color-p);
+    margin: 1.5rem 0 2rem;
+}
+
+.Hero_img {
+    padding-left: 2rem;
+    position: relative;
+    z-index: 11;
+}
+
+.Hero_img::before {
+    position: absolute;
+    content: '';
+    left: -210px;
+    top: -100px;
+    width: 160%;
+    height: 138%;
+    margin: auto;
+    background: url(../assets/images/eclipse.webp) no-repeat;
+    background-size: contain;
+    background-position: bottom center;
+    z-index: -1;
+}
+
+/* form css  */
+.form_row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 420px;
+}
+
+.email_us {
+    position: relative;
+    z-index: 11;
+}
+
+.form_row input {
+    padding: 5px 12px;
+    font-size: 14px;
+    font-weight: var(--weight-regualr);
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;
+    border: var(--divider-line);
+    background: var(--bg-white);
+    box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07);
+}
+
+.form_row button.Cta {
+    min-width: 122px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: -0.02px;
+}
+
+/* 
+==================================================
+- Designed by creators, For creators section css
+==================================================
+*/
+.Sec_bg {
+    background: var(--sec-bg);
+}
+
+.forcreaters {
+    padding: 5.5rem 0 3rem;
+}
+
+.sub_heading {
+    text-align: center;
+}
+
+.forcreaters .sub_heading h2 {
+    max-width: 370px;
+}
+
+.sub_heading h2 {
+    font-size: 36px;
+    color: var(--text-white);
+    font-weight: var(--weight-regualr);
+    letter-spacing: -1.08px;
+    margin: 0 auto 1rem;
+    line-height: 1.2em;
+}
+
+.forcreaters .sub_heading p {
+    max-width: 304px;
+}
+
+.sub_heading p {
+    color: var(--color-editor);
+    margin: 0 auto 1rem;
+}
+
+.txt_imgblk {
+    padding: 6rem 7rem 0;
+}
+
+.forcreaters .txt_blk {
+    padding-right: 2rem;
+}
+
+.forcreaters .list_blk {
+    padding-right: 2rem;
+}
+
+.forcreaters .blk_img {
+    padding-left: 3rem;
+}
+
+.blk_img img {
+    border-radius: 20px;
+}
+
+span.Badges {
+    font-size: 14px;
+    font-weight: var(--weight-regular);
+    letter-spacing: -0.05px;
+    color: var(--text-white);
+    background: var(--bg-blue);
+    border-radius: 3rem;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.txt_blk h2 {
+    font-size: 36px;
+    color: var(--text-white);
+    font-weight: var(--weight-regular);
+    letter-spacing: -1.08px;
+}
+
+.txt_blk p {
+    color: var(--color-editor);
+    max-width: 500px;
+    margin: 1.2rem 0 1rem;
+}
+
+.txt_blk p a {
+    color: var(--color-blue);
+}
+
+.txt_blk p a:hover {
+    text-decoration: underline;
+}
+
+.list_blk {
+    padding-top: 1.4rem;
+}
+
+.list_blk ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 2.4rem;
+}
+
+.list_blk li {
+    font-size: 1rem;
+    font-weight: var(--weight-regular);
+    color: var(--text-white);
+    line-height: 1.5em;
+    padding-left: 3.3rem;
+}
+
+.list_blk li::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: url(../assets//images/Check.svg) no-repeat center;
+    background-size: contain;
+    margin: auto;
+}
+
+
+/* 
+==================================================
+- For Brands section css
+==================================================
+*/
+.forbrands {
+    padding: 6rem 0 3rem;
+}
+
+.txt_imgblk.re .row {
+    flex-direction: row-reverse;
+}
+
+.forbrands .txt_blk {
+    padding-left: 3.5rem;
+}
+
+.forbrands .list_blk {
+    padding-left: 3.5rem;
+}
+
+.forbrands .blk_img {
+    padding-right: 4rem;
+}
+
+.forbrands .sub_heading h2 {
+    max-width: 550px;
+}
+
+.forbrands .sub_heading p {
+    max-width: 360px;
+}
+
+/* 
+==================================================
+- For Agencies section css
+==================================================
+*/
+.foragencies {
+    padding: 6rem 0 6rem;
+}
+
+.foragencies .sub_heading h2 {
+    max-width: 480px;
+}
+
+.foragencies .sub_heading p {
+    max-width: 390px;
+}
+
+.foragencies .txt_blk {
+    padding-right: 3rem;
+}
+
+.foragencies .list_blk {
+    padding-right: 3rem;
+}
+
+.foragencies .blk_img {
+    padding-left: 4rem;
+}
+
+.foragencies .txt_blk h2 {
+    max-width: 600px;
+}
+
+/* 
+==================================================
+- Simplification for collabrations section css
+==================================================
+*/
+.simplification {
+    padding: 6rem 0 3.5rem;
+}
+
+.sub_heading.blk h2 {
+    color: var(--color-black);
+    font-weight: var(--weight-semi-bold);
+}
+
+.sub_heading.blk p {
+    color: var(--color-editor2);
+    max-width: 320px;
+}
+
+.txt_imgblk.simp {
+    padding: 5rem 0 4rem;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.featr_box {
+    border-top: var(--border);
+}
+
+.feat_card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem 0 10px;
+    position: relative;
+}
+
+.fe_col {
+    position: relative;
+}
+
+.fe_col::before {
+    position: absolute;
+    content: '';
+    top: -2px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: var(--bg-blue);
+    transition: 0.3s ease;
+}
+
+.fe_col:hover::before {
+    width: 100%;
+    left: 0;
+    right: unset;
+}
+
+.feat_card h4 {
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: -0.4px;
+    line-height: 1.2em;
+    color: var(--color-black);
+}
+
+.feat_card a {
+    font-size: 14px;
+    font-weight: var(--weight-bold);
+    letter-spacing: -0.02px;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    transition: 0.3s ease;
+}
+
+.feat_card a:hover {
+    color: var(--heading-color);
+    letter-spacing: 0.6px;
+}
+
+.feat_card a:hover svg path {
+    stroke: var(--heading-color);
+}
+
+/* 
+==================================================
+- Explore more features section css
+==================================================
+*/
+.explore {
+    padding: 4rem 0;
+    border-top: var(--divider-line);
+    border-bottom: var(--divider-line);
+}
+
+.featr_box.b0 {
+    border: 0;
+    padding-top: 2rem;
+}
+
+.featr_box.b0 .row {
+    row-gap: 2rem;
+}
+
+.get_start {
+    padding: 5rem 0;
+    background: var(--sec-bg-lt);
+}
+
+.Get_bg {
+    background: var(--sec-bg-dark);
+    border-radius: 12px;
+    padding: 5rem;
+}
+
+.sub_heading.get_ttl {
+    text-align: left;
+    padding-right: 3rem;
+}
+
+.list_blk.get_lst {
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 2rem;
+}
+
+.get_ttl .Cta {
+    border: 1px solid transparent;
+}
+
+.get_ttl .Cta:hover {
+    border-color: var(--bg-white);
+}
+
+/* 
+==================================================
+- Collaborate On the Fly section css
+==================================================
+*/
+.onthe_fly {
+    padding: 5rem 0 0;
+    background: var(--sec-bg-lt-green);
+    overflow: hidden;
+}
+
+.onthe_fly .sub_heading h2 {
+    color: var(--color-black);
+    font-weight: var(--weight-semi-bold);
+}
+
+.get_app {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 1rem;
+}
+
+.get_app img {
+    max-width: 140px;
+}
+
+.mobiles {
+    padding: 0 6rem 0 3rem;
+}

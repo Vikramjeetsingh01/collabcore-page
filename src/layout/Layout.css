@@ -1,0 +1,193 @@
+/* Header and footer css  */
+/* 
+==================================================
+- header section css
+==================================================
+*/
+.headr_btns {
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+}
+.navbar {
+    padding: 10px 0;
+    border-bottom: var(--divider);
+    background: var(--bg-white);
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+}
+.navbar-nav {
+    gap: 10px;
+    margin-left: 15px;
+    padding-left: 15px;
+    position: relative;
+}
+.navbar-nav::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    height: 52%;
+    margin: auto;
+    background: #C7CAD1;
+}
+.navbar-brand {
+    display: flex;
+}
+.navbar-brand img{
+    max-width: 152px;
+}
+.navbar-nav li .nav-link {
+    font-size: 14px;
+    font-weight: var(--weight-medium);
+    color: var(--link-color);
+    letter-spacing: -0.05px;
+    position: relative;
+}
+.navbar-nav li .nav-link::before{
+    position: absolute;
+    content: '';
+    left: 8px;
+    bottom: 4px;
+    width: 0;
+    height: 1.5px;
+    background: var(--btn-bg);
+    transition: 0.3s ease;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show, .navbar-nav .nav-link:hover {
+    color: var(--link-hover);
+}
+.navbar-nav .nav-link.active::before, .navbar-nav .nav-link.show::before, .navbar-nav .nav-link:hover::before{
+    width: 50%;
+}
+.navbar-nav .dropdown-toggle::after {
+    margin-left: 13px;
+    vertical-align: 3px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-right: 1.5px solid #ada1a100;
+    border-left: 1.5px solid var(--link-color);
+    border-top: 1.5px solid var(--link-color);
+    border-radius: 0;
+    transform: rotate(-135deg);
+    transition: 0.3s ease;
+}
+.navbar-nav .dropdown-toggle.show::after {
+    transform: rotate(45deg);
+    border-left: 1.5px solid var(--bg-blue);
+    border-top: 1.5px solid var(--bg-blue);
+    vertical-align: 0px;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    font-size: 14px;
+    color: var(--link-color);
+}
+.navbar-nav .dropdown-menu {
+    transform: translate(5px, 25px);
+    display: block !important;
+    opacity: 0;
+    visibility: hidden;
+    background: var(--bg-white);
+    border: var(--divider);
+    box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07);
+    transition: 0.3s ease;
+}
+.navbar-nav .dropdown-menu.show{
+    transform: translate(5px, 0);
+    opacity: 1;
+    visibility: visible;
+}
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    color: var(--color-blue);
+    background: transparent;
+}
+
+/* 
+==================================================
+- Footer section css
+==================================================
+*/
+.Footer {
+    padding: 5rem 0 0;
+}
+.ftr_left {
+    padding-right: 2rem;
+}
+img.ftr_logo {
+    max-width: 152px;
+    margin-bottom: 1.5rem;
+}
+.ftr_left p {
+    font-size: 14px;
+    color: var(--color-black);
+    letter-spacing: -0.05px;
+}
+.ftr_nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 0.4rem;
+    column-gap: 1.8rem;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+}
+.ftr_nav li a {
+    font-size: 14px;
+    letter-spacing: -0.05px;
+    color: var(--color-editor2);
+    font-weight: var(--weight-medium);
+}
+.ftr_nav li a:hover{
+    letter-spacing: 0.4px;
+    color: var(--color-blue);
+}
+.ftr_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 440px;
+    max-width: 100%;
+    margin-left: auto;
+}
+.ftr_form .form_row {
+    max-width: 100%;
+}
+.ftr_form h5 {
+    font-size: 1rem;
+    color: var(--color-black);
+}
+.copyright {
+    margin-top: 4rem;
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    border-top: var(--divider);
+}
+.copyright p {
+    font-size: 13px;
+    margin: 0;
+}
+.privacy_lnk {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.privacy_lnk a {
+    font-size: 12px;
+    color: var(--color-editor2);
+    font-weight: var(--weight-regular);
+}
+.privacy_lnk a:hover {
+    color: var(--color-blue);
+}
